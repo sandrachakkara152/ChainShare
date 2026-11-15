@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChainShare Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>ChainShare</h2>
+        <input type="text" placeholder="Search contacts">
+
+        <div class="contact" onclick="openChat('Alfina')">
+    <div class="avatar">A</div>
+    <div>
+        <h3>Alfina</h3>
+        <p>Online</p>
+    </div>
+</div>
+        <div class="contact" onclick="openChat('Devikrishna')">
+    <div class="avatar">D</div>
+    <div>
+        <h3>Devikrishna</h3>
+        <p>Online</p>
+    </div>
+</div>
+        <div class="contact" onclick="openChat('Sandra')">
+    <div class="avatar">S</div>
+    <div>
+        <h3>Sandra</h3>
+        <p>Offline</p>
+    </div>
+</div>
+    </div>
+
+    <div class="chat">
+        <div class="header">
+            <h3 id="chatName">Select a contact</h3>
+            <p>Secure messaging</p>
+        </div>
+
+        <div class="messages" id="messages">
+            Welcome to ChainShare Lite!
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="message"
+            placeholder="Type a message...">
+
+            <button onclick="sendMessage()">Send</button>
+
+            <input type="file" id="file">
+            <button onclick="sendFile()">Upload</button>
+        </div>
+    </div>
+
+</div>
+<!-- Blockchain Viewer -->
+
+<div id="blockchainViewer">
+    <h2>⛓️ Blockchain Records</h2>
+
+    <button onclick="showBlockchain()">
+        View Blockchain
+    </button>
+
+    <div id="blockchainRecords"></div>
+</div>
+<script src="blockchain.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

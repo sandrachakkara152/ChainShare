@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChainShare Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>ChainShare</h1>
+        <p>Secure File Transfer & Messaging</p>
+
+        <h2>Welcome Back!</h2>
+
+        <form onsubmit="loginUser(event)">
+
+            <input type="email"
+            id="email"
+            placeholder="Enter Email"
+            required>
+
+            <input type="password"
+            id="password"
+            placeholder="Enter Password"
+            required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>New User? <a href="#" onclick="showRegister()">Register</a></p>
+
+        <div id="registerBox" style="display:none">
+
+            <h2>Create Account</h2>
+
+            <input type="text" id="regName"
+            placeholder="Enter Name">
+
+            <input type="email" id="regEmail"
+            placeholder="Enter Email">
+
+            <input type="password" id="regPassword"
+            placeholder="Create Password">
+
+            <button onclick="registerUser()">Register</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
